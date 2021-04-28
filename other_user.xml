@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imgMessage"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/profile_images"
+        android:background="@drawable/otherback"
+        android:maxWidth="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_images"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="#FFFCFC"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/profile_images"
+        android:background="@drawable/otherback"
+        android:maxWidth="250dp"
+        android:padding="3dp"
+        android:text="hello how are you?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

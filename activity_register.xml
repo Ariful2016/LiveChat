@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/livechat"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <EditText
+        android:drawableTint="@color/colorAccent"
+        android:paddingEnd="8dp"
+        android:drawablePadding="15dp"
+        android:drawableEnd="@drawable/ic_email_24"
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/edt_back"
+        android:hint="User Name"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp" />
+    <EditText
+        android:drawableTint="@color/colorAccent"
+        android:paddingEnd="8dp"
+        android:drawablePadding="15dp"
+        android:drawableEnd="@drawable/ic_email_24"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/edt_back"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp" />
+
+
+    <EditText
+        android:drawableTint="@color/colorAccent"
+        android:paddingEnd="8dp"
+        android:drawablePadding="15dp"
+        android:drawableEnd="@drawable/ic_pass_eye"
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/edt_back"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="15dp" />
+
+
+    <CheckBox
+        android:id="@+id/rememberMe"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="15dp"
+        android:text="Remember Me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:fontFamily="@font/chela_one"
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/btn_back"
+        android:text="Register"
+        android:textColor="#fff" />
+
+</LinearLayout>
